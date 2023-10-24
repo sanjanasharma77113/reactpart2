@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import {useState,useCallback} from 'react'
 import './App.css';
 
 function App() {
+  const [lenght,setLength]= useState(8)
+  const [numberAllowed, setNumberAllowed] = useState
+  (false);
+  const[charAllowed,setCharAllowed] = useState(false)
+  const[password,setPassword]= useState("")
+
+  const passwordGenertor= useCallback(()=> {
+    let pass= ""
+    let str = "sanjana"
+
+  }, [lenght,numberAllowed,charAllowed,setPassword])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+
+      <h1 className="text-4xl text-center text-white">password generator</h1>
     </div>
   );
 }
